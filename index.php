@@ -4,4 +4,5 @@ require_once "controller/IndexController.php";
 
 $index = new IndexController();
 
-$index->accueil();
+$index->model();
+
