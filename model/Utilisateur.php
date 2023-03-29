@@ -12,7 +12,7 @@ class Utilisateur
         $this->password = $password;
         $this->role = $role;
     }
-    public function ajouterUtilisateur()
+    /*public function ajouterUtilisateur()
     {
         global $conn; // On suppose que $conn est une connexion à la base de données
 
@@ -24,5 +24,5 @@ class Utilisateur
         $stmt->execute();
 
         return $stmt->rowCount(); // Retourne le nombre de lignes insérées
-    }
+    }*/
 }
