@@ -1,20 +1,30 @@
 <?php
 
-require_once "model/Model.php";
-require_once "vues/index.php";
+require_once "model/Database.php";
+require_once "model/Utilisateur.php";
 
 class IndexController
 {
-    /*public function model()
+    public function model()
     {
-        $model = new Model();
-        $test = $model->Test();
-        echo $test;
-    }*/
-
-    public function index()
-    {
-        $index = new Index();
-        $index->index();
+        $model = new Database();
+        $model->getConnection();
+        require_once "vues/index.php";
     }
+    
+    public function getUser(){
+        // Exemple d'utilisation de la classe
+        $utilisateur = new Utilisateur('Dupont', '1234', 'Lecteur');
+
+        $resultat = $utilisateur->ajouterUtilisateur();
+
+        if ($resultat > 0) {
+            echo "Utilisateur ajouté avec succès";
+        } else {
+            echo "Erreur lors de l'ajout de l'utilisateur";
+        }
+    }
+
+    
+
 }
