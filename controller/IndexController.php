@@ -7,16 +7,23 @@ class IndexController
 {
     public function model()
     {
-        $model = new Database();
-        $model->getConnection();
-        require_once "vues/index.php";
+        // $model = new Database();
+        // $model->getConnection();
+        require_once "vues/home.php";
     }
-    
+
+
     /*public function getUser(){
         // Exemple d'utilisation de la classe
         $utilisateur = new Utilisateur('Dupont', '1234', 'Lecteur');
 
-        $resultat = $utilisateur->ajouterUtilisateur();
+    // public function getUser(){
+    //     // Exemple d'utilisation de la classe
+    //     $utilisateur = new Utilisateur('Dupont', '1234', 'Lecteur');
+
+
+    //     $resultat = $utilisateur->ajouterUtilisateur();
+
 
         if ($resultat > 0) {
             echo "Utilisateur ajouté avec succès";
