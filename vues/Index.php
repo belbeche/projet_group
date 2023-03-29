@@ -10,7 +10,7 @@ require_once 'vues/Index.php'
   <body>
 
 
-    <h1 class = "titre">Bibliothèque des geeks</h2>
+    <h1 class = "titre">Bibliothèque des geeks</h1>
     <h2 class="centeredtop">Connexion</h2>
     <form method="post" action="" class="centered">
       <label for="username">Nom d'utilisateur:</label>
