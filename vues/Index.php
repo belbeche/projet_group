@@ -10,8 +10,8 @@ require_once 'vues/Index.php'
   <body>
 
 
-    <h1 class = "titre">Bibliothèque des geeks</h1>
-    <h2 class="centeredtop">Connexion</h2>
+    <h1 class = "titre">Bibliothèque des geeks</h2>
+    <h2 class= "centeredtop">Connexion</h2>
     <form method="post" action="" class="centered">
       <label for="username">Nom d'utilisateur:</label>
       <input type="text" name="username" id="username" required><br><br>
@@ -32,7 +32,7 @@ require_once 'vues/Index.php'
       if ($username == "utilisateur" && $password == "mdp") {
         echo "Connexion réussie.";
       } else {
-        echo "Nom d'utilisateur ou mot de passe incorrect.";
+        echo "<h1 class = center> Nom d'utilisateur ou mot de passe incorrect. <h1>" ;
       }
     }
     ?>

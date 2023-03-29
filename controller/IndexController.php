@@ -24,11 +24,11 @@ class IndexController
 
     //     $resultat = $utilisateur->ajouterUtilisateur();
 
+    //     if ($resultat > 0) {
+    //         echo "Utilisateur ajouté avec succès";
+    //     } else {
+    //         echo "Erreur lors de l'ajout de l'utilisateur";
+    //     }
+    // }
 
-        if ($resultat > 0) {
-            echo "Utilisateur ajouté avec succès";
-        } else {
-            echo "Erreur lors de l'ajout de l'utilisateur";
-        }
-    }*/
-}
+    }
