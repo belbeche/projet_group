@@ -1,24 +1,30 @@
 body {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
+}
+
+p {
+  font-size: 16px;
 }
 
 .centered {
-    position: fixed; /* or absolute */
-    top: 45%;
-    left: 40%;
-  }
+  position: fixed;
+  /* or absolute */
+  top: 45%;
+  left: 40%;
+}
 
 .centeredtop {
-    position: fixed; /* or absolute */
-    top: 38%;
-    left: 44%;
-    font-style: italic;
-  }
+  position: fixed;
+  /* or absolute */
+  top: 38%;
+  left: 44%;
+  font-style: italic;
+}
 
 .titre {
-    font-style: italic;
-    position: fixed;
-    top: 30%;
-    left: 40%;
-    font-size: 20;
-    }
+  font-style: italic;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  font-size: 20;
+}
