@@ -6,3 +6,5 @@ $index = new IndexController();
 
 //$index->model();
 
+$index->getUser();
+

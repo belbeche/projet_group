@@ -8,6 +8,8 @@ require_once 'vues/Index.php'
     <title>Page de connexion</title>
   </head>
   <body>
+
+
     <h1 class = "titre">Bibliothèque des geeks</h2>
     <h2 class= "centeredtop">Connexion</h2>
     <form method="post" action="" class="centered">
@@ -15,6 +17,8 @@ require_once 'vues/Index.php'
       <input type="text" name="username" id="username" required><br><br>
       <label for="password">Mot de passe:</label>
       <input type="password" name="password" id="password" required><br><br>
+        <label for="password">Role:</label>
+        <input type="password" name="password" id="password" required><br><br>
       <input type="submit" name="submit" value="Se connecter">
       </form>
 
