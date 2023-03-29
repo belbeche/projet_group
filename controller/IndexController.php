@@ -5,10 +5,15 @@ require_once "model/Utilisateur.php";
 
 class IndexController
 {
-    public function model()
+    public function getPageDeConnexion()
     {
         // $model = new Database();
         // $model->getConnection();
+        require_once "vues/index.php";
+    }
+
+    public function getPageHome()
+    {
         require_once "vues/home.php";
     }
 

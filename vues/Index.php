@@ -1,40 +1,21 @@
-<?php
-require_once 'vues/Index.php'
-?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-  <link rel="stylesheet" href="assets/css/style.css"> 
+  <link rel="stylesheet" href="../assets/css/style.css">
     <title>Page de connexion</title>
   </head>
   <body>
 
-
-    <h1 class = "titre">Bibliothèque des geeks</h2>
-    <h2 class= "centeredtop">Connexion</h2>
-    <form method="post" action="" class="centered">
-      <label for="username">Nom d'utilisateur:</label>
-      <input type="text" name="username" id="username" required><br><br>
-      <label for="password">Mot de passe:</label>
-      <input type="password" name="password" id="password" required><br><br>
-        <label for="password">Role:</label>
+    <h1 class="titre">Bibliothèque des geeks</h1>
+    <h2 class="centeredtop">Connexion</h2>
+    <form method="post" action="../model/logConnexion.php" class="centered">
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" name="username" id="username" required><br><br>
+        <label for="password">Mot de passe:</label>
         <input type="password" name="password" id="password" required><br><br>
-      <input type="submit" name="submit" value="Se connecter">
+        <label for="role">Role:</label>
+        <input type="text" name="role" id="role"><br><br>
+        <button type="submit" class="info-btn">Se connecter</button>
       </form>
-
-    <?php
-    // Vérification des informations de connexion
-    if (isset($_POST['submit'])) {
-      $username = $_POST['username'];
-      $password = $_POST['password'];
-
-      // Vérifier si le nom d'utilisateur et le mot de passe sont corrects
-      if ($username == "utilisateur" && $password == "mdp") {
-        echo "Connexion réussie.";
-      } else {
-        echo "<h1 class = center> Nom d'utilisateur ou mot de passe incorrect. <h1>" ;
-      }
-    }
-    ?>
   </body>
 </html>
