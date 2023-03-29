@@ -1,5 +1,24 @@
 <?php
-require_once 'vues/home.php'
+require_once 'vues/home.php';
+require_once "controller/IndexController.php";
+/*echo "<pre>";
+var_dump($_POST);
+if($_POST)exit;*/
+$index = new IndexController();
+if (isset($_POST['connexion'])) {
+      $index->Connexion();
+   exit;
+}
+
+if (isset($_POST['accueil'])) {
+    $index->model();
+ exit;
+}
+if (isset($_POST['bibliotheque'])){
+      $index->Bibliotheque();
+   exit;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -16,11 +35,12 @@ require_once 'vues/home.php'
         <input type="checkbox" id="check">
         <header>
             <h2><a href="#" class="logo">Livraria</a></h2>
-            <nav class="navigation">
-                <a href="#">Acceuil</a>
-                <a href="#">Connexion</a>
-                <a href="#">Inscription</a>
-            </nav>
+            <form method="post" action="" class="navigation">
+            <input type="submit" name="accueil" id="" >   
+            <input type="submit" name="connexion" id="Connexion">
+            <input type="submit" name="bibliotheque" id="">
+            </form>
+            
             <label for="check">
                 <i class="fas fa-bars menu-btn"></i>
                 <i class="fas fa-times close-btn"></i>

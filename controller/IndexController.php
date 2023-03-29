@@ -16,12 +16,20 @@ class IndexController
     {
         require_once "vues/home.php";
     }
+    
+    public function Connexion()
+    {
+        // $model = new Database();
+        // $model->getConnection();
+        require_once "vues/identification.php";
+    }
 
-
-    /*public function getUser(){
-        // Exemple d'utilisation de la classe
-        $utilisateur = new Utilisateur('Dupont', '1234', 'Lecteur');
-
+    public function Bibliotheque()
+    {
+        // $model = new Database();
+        // $model->getConnection();
+        require_once "vues/bibliotheque.php";
+    }
     // public function getUser(){
     //     // Exemple d'utilisation de la classe
     //     $utilisateur = new Utilisateur('Dupont', '1234', 'Lecteur');
