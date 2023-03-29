@@ -3,26 +3,25 @@
 require_once "model/Database.php";
 require_once "model/Utilisateur.php";
 
-class IndexController{
-    public function model(){
-
-        //$model = new Database();
-        //$model->getConnection();
-        require_once "vues/index.php";
-
+class IndexController
+{
+    public function model()
+    {
+        // $model = new Database();
+        // $model->getConnection();
+        require_once "vues/home.php";
     }
-    /*public function getUser(){
-        // Exemple d'utilisation de la classe
-        $utilisateur = new Utilisateur('Dupont', '1234', 'Lecteur');
-
-        $resultat = $utilisateur->ajouterUtilisateur();
-
-        if ($resultat > 0) {
-            echo "Utilisateur ajouté avec succès";
-        } else {
-            echo "Erreur lors de l'ajout de l'utilisateur";
-        }
-    }*/
     
-}  
+    // public function getUser(){
+    //     // Exemple d'utilisation de la classe
+    //     $utilisateur = new Utilisateur('Dupont', '1234', 'Lecteur');
+
+    //     $resultat = $utilisateur->ajouterUtilisateur();
+
+    //     if ($resultat > 0) {
+    //         echo "Utilisateur ajouté avec succès";
+    //     } else {
+    //         echo "Erreur lors de l'ajout de l'utilisateur";
+    //     }
+    // }
 
