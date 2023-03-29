@@ -4,8 +4,12 @@ require_once "model/Database.php";
 require_once "model/Utilisateur.php";
 
 class IndexController
+<<<<<<< HEAD
 {
     public function model()
+=======
+{ /*public function model()
+>>>>>>> ead9ed3c4264f8b5869c3950282f073abec69a5b
     {
         $model = new Database();
         $model->getConnection();
