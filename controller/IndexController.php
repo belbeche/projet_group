@@ -29,6 +29,5 @@ class IndexController
     //     } else {
     //         echo "Erreur lors de l'ajout de l'utilisateur";
     //     }
-    // }
-
-    }
+    // }*/
+}
