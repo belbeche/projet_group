@@ -37,7 +37,7 @@ header .logo{
     letter-spacing: 1px;
 }
 
-header .navigation a{
+header .navigation input{
     color: #000;
     text-decoration: none;
     font-weight: 500;
@@ -47,10 +47,10 @@ header .navigation a{
     transition: .3s;
     transition-property: background;
 }
-header .navigation a:not(:last-child){
+/*header .navigation input:not(:last-child){
     margin-right: 30px;
-}
-header .navigation a:hover{
+}*/
+header .navigation input:hover{
     background: #fff;
 }
 
@@ -155,7 +155,7 @@ label{
         left: 0;
         right: 0;
     }
-    #check:checked ~ header .navigation a{
+    #check:checked ~ header .navigation input{
         font-weight: 700;
         margin-right: 0;
         margin-bottom: 50px;

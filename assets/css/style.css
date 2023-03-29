@@ -11,7 +11,7 @@ body {
 .centeredtop {
     position: fixed; /* or absolute */
     top: 38%;
-    left: 44%;
+    left: 40%;
     font-style: italic;
   }
 
@@ -22,3 +22,10 @@ body {
     left: 40%;
     font-size: 20;
     }
+
+    .centeredbuttom {
+        position: fixed; /* or absolute */
+        top: 38%;
+        left: 4%;
+        font-style: italic;
+      }
