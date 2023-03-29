@@ -5,12 +5,12 @@ require_once "vues/index.php";
 
 class IndexController
 {
-    public function model()
+    /*public function model()
     {
         $model = new Model();
         $test = $model->Test();
         echo $test;
-    }
+    }*/
 
     public function index()
     {
